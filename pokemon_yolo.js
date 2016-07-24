@@ -53,7 +53,7 @@ a.init(username, password, location, provider, function(err) {
             // console.log(a.pokemonlist[0])
             var pokemon = a.pokemonlist[parseInt(hb.cells[i].NearbyPokemon[0].PokedexNumber)-1];
             console.log('1[+] There is a ' + pokemon.name + ' at ' + hb.cells[i].NearbyPokemon[0].DistanceMeters.toString() + ' meters');
-            scrollMessage = scrollMessage + pokemon.name + ' ' + hb.cells[i].NearbyPokemon[0].DistanceMeters.toString();
+            scrollMessage = scrollMessage + pokemon.name + ' ' + hb.cells[i].NearbyPokemon[0].DistanceMeters.toString() + 'm';
           }
         }
 
