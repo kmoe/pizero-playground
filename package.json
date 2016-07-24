@@ -1,0 +1,23 @@
+{
+  "name": "pizero-playground",
+  "version": "1.0.0",
+  "description": "pizero0 and rei",
+  "main": "index.js",
+  "scripts": {
+    "test": "no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmoe/pizero-playground.git"
+  },
+  "author": "Katy Moe <katy@katy.moe> (http://katy.moe)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kmoe/pizero-playground/issues"
+  },
+  "homepage": "https://github.com/kmoe/pizero-playground#readme",
+  "dependencies": {
+    "pokemon-go-node-api": "^1.3.0",
+    "python-shell": "^0.4.0"
+  }
+}
