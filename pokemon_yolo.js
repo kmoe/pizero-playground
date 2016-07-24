@@ -59,6 +59,7 @@ a.init(username, password, location, provider, function(err) {
         if (pythonProcess) {
           pythonProcess.childProcess.kill();
         }
+
         if (thereArePokemon) {
           var options = {
             args: [scrollMessage],
@@ -68,6 +69,10 @@ a.init(username, password, location, provider, function(err) {
         } else {
           pythonProcess = new PythonShell('sine.py');
         }
+
+        pythonProcess.on('message', function(message) {
+          console.log(message);
+        });
 
       });
     }, 20000);
