@@ -56,7 +56,9 @@ a.init(username, password, location, provider, function(err) {
           }
         }
 
-        pythonProcess.childProcess.kill();
+        if (pythonProcess) {
+          pythonProcess.childProcess.kill();
+        }
         if (thereArePokemon) {
           var options = {
             args: [scrollMessage],
